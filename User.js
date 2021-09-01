@@ -7,6 +7,6 @@ class User extends Entity{
     }
 
     teacherSay(){
-        console.log(`Hi. I'm ${this.name}. My classroom is ${this.classroom}`)
+        return `Hi. I'm ${this.name}. My classroom is ${this.classroom}`
     }
 }

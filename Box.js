@@ -5,6 +5,6 @@ class Box extends Entity{
         this.user = user
     }
     getInfo(){
-        console.log(`${this.name} class belongs to ${this.user.name} and thay study in ${this.user.classroom}`)
+        return`${this.name} class belongs to ${this.user.name} and thay study in ${this.user.classroom}`
     }
 }

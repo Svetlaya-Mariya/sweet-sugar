@@ -7,6 +7,6 @@ class Stuff extends Entity{
     }
 
     pupilSay(){
-        return `Hello, My name is ${this.name} ${this.surmane} I study in ${this.box.name} class. And my teacher's name is ${this.box.user.name}`
+        return `Hello, My name is ${this.name} ${this.surname} I study in ${this.box.name} class. And my teacher's name is ${this.box.user.name}`
     }
 }

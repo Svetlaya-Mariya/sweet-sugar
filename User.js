@@ -1,12 +1,14 @@
 class User extends Entity{
-    constructor(name, age, experience, classroom){
-        super (name)
-        this.age = age
-        this.experience = experience
-        this.classroom = classroom
+    constructor(options){
+        super (options.name)
+        this.age = options.age
+        this.position = options.position
+        this.boxesNames = options.boxesNames
     }
 
-    teacherSay(){
-        return `Hi. I'm ${this.name}. My classroom is ${this.classroom}`
+    countBoxes(){
+        return this.boxesNames.reduce((count, item)=>{
+            return ++count;
+        }, 0)
     }
 }

@@ -1,10 +1,14 @@
 class Box extends Entity{
-    constructor(name, countPupil, user){
-        super(name)
-        this.countPupil = countPupil
-        this.user = user
+    constructor(options){
+        super(options.name)
+        this.content = options.content
+        this.ownerName = options.ownerName
     }
-    getInfo(){
-        return`${this.name} class belongs to ${this.user.name} and thay study in ${this.user.classroom}`
+    
+    sumStuff(){
+        return this.content.reduce((sum, elem) => {
+           return sum + parseInt(elem.price)
+        }, 0) 
     }
 }
+

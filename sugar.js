@@ -28,7 +28,7 @@ const stuff2 = new Stuff({
 });
 const stuff3 = new Stuff({
     name: 'ruler', 
-    color: 'pinc',
+    color: 'pink',
     price:  '2$'
 });
 const stuff4 = new Stuff({
@@ -107,7 +107,7 @@ outputUsers(ivanov, user1.name, user1.age, user1.position, user1.boxesNames);
 outputUsers(petrov, user2.name, user2.age, user2.position, user2.boxesNames);
 // exemple 
 
-output(exe1, `In <strong>${box1.name}</strong> contains items for the total amount <strong>${box1.sumStuff()}$</strong> ` )
+output(exe1, `<strong>${box1.name}</strong> contains items for the total amount <strong>${box1.sumStuff()}$</strong> ` )
 output(exe2, `<strong>${user2.name}</strong> has <strong>${user2.countBoxes()}</strong> boxes` )
 
 //function for output info in html

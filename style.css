@@ -1,0 +1,14 @@
+* {
+  background-color: #fff3e4;
+}
+.main {
+  width: 80%;
+  height: 80%;
+  margin: 50px auto;
+  border: 5px double #c8332c;
+  padding: 20px;
+  color: #8c5630;
+}
+h2 {
+  text-align: center;
+}
